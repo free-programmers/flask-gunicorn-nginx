@@ -1,0 +1,7 @@
+#deb https://mirror.iranserver.com/ubuntu/ jammy main
+#deb-src https://mirror.iranserver.com/ubuntu/ jammy main
+
+deb https://mirror.iranserver.com/ubuntu jammy main restricted universe multiverse
+deb https://mirror.iranserver.com/ubuntu jammy-updates main restricted universe multiverse
+deb https://mirror.iranserver.com/ubuntu jammy-security main restricted universe multiverse
+deb https://mirror.iranserver.com/ubuntu jammy-backports main restricted universe multiverse
