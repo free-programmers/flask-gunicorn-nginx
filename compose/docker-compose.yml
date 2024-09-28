@@ -2,6 +2,7 @@ services:
 
   redis:
     image: redis:7.4.0
+    container_name: redis
     restart: on-failure
     expose:
       - 6379
@@ -15,7 +16,7 @@ services:
       - 8000
   nginx:
     build: ../web/nginx
-    restart: on-failure
     container_name: nginx_flask_app
+    restart: on-failure
     ports:
       - "80:80"
