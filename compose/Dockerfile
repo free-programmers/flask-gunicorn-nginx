@@ -9,7 +9,8 @@ WORKDIR /usr/src/app
 
 COPY requirements.txt ./
 
-RUN pip3 config set global.trusted-host 188.121.98.210 && \
+RUN python3 -m pip install --upgrade pip && \
+     pip3 config set global.trusted-host 188.121.98.210 && \
     pip3 config set global.extra-index-url http://188.121.98.210:9999/ && \
     pip3 install --no-cache-dir -r requirements.txt
 
